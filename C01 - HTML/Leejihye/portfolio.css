@@ -1,0 +1,149 @@
+section header {
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    background: #d1d3d4;
+    width: 350px;
+    height: 650px;
+    background-size: cover;
+}
+
+section header #logo {
+    margin-top: 100px;
+    margin-left: 98px;
+    width: 160px;
+    height: 110px;
+    background: url(logo.png) no-repeat;
+    display: block;
+}
+
+section header menu {
+    margin-top: 50px;
+    font-size: 8px;
+    color: #ffffff;
+    font-family: helvetica;
+}
+
+section header menu li {
+    padding: 5px 0 5px 98px;
+}
+
+section header menu li:hover {
+    color: #ffffff;
+}
+
+section header menu li div {
+    display: inline-block;
+}
+
+section header menu li:first-child:hover {
+    background: #71bf44;
+}
+
+section header menu li:nth-child(2):hover {
+    background: #2384c6;
+}
+
+section header menu li:nth-child(3):hover {
+    background: #faa61a;
+}
+
+section header menu li:nth-child(4):hover {
+    background: #ed1260;
+}
+
+section header menu li:nth-child(5):hover {
+    background: #8f52a1;
+}
+
+section header menu li:nth-child(6):hover {
+    background: #f36f21;
+}
+
+section header menu li:nth-child(7):hover {
+    background: #40bb87;
+}
+
+section header menu li:last-child:hover {
+    background: #f15d5f;
+}
+
+section header .link {
+    margin-top: 50px;
+    margin-left: 90px;
+}
+section header #tumblr,#facebook,#twitter,#mail {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+section header #tumblr {
+     background: url(tumblr.png) no-repeat;
+ }
+
+section header #tumblr:hover {
+    background: url(hover_tumblr.png) no-repeat;
+}
+
+section header #facebook {
+    background: url(facebook.png) no-repeat;
+    margin-left: 3px;
+}
+
+section header #facebook:hover {
+    background: url(hover_facebook.png) no-repeat;
+}
+
+section header #twitter {
+    background: url(twitter.png) no-repeat;
+    margin-left: 3px;
+}
+
+section header #twitter:hover {
+    background: url(hover_twitter.png) no-repeat;
+}
+
+section header #mail {
+    background: url(mail.png) no-repeat;
+    margin-left: 3px;
+}
+
+section header #mail:hover {
+    background: url(hover_mail.png) no-repeat;
+}
+
+section header #copyright {
+    color: #939598;
+    font-size: 8px;
+    font-family: helvetica;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+section #contents-top,#contents-bottom {
+    background: #f1f2f2;
+    width: 930px;
+    height: 50px;
+    position: fixed;
+
+}
+
+section #contents-bottom {
+    bottom: 0px;
+}
+
+section #main {
+    background: url(main.png) no-repeat;
+    width: 535px;
+    height: 463px;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+section #main:hover {
+    background: url(hover_main.png) no-repeat;
+}
