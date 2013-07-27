@@ -13,8 +13,9 @@ jQuery ->
 			@
 
 		delete: ->
-			@remove()
-			@model.destroy()
+			@$el.fadeOut 'fast', ->
+				@remove()
+				@model.destroy()
 
 	class StreamList extends Backbone.Collection
 		model: Stream
@@ -41,7 +42,7 @@ jQuery ->
 		addOne: (model) ->
 			streamView = new StreamView model: model
 			@$('ul').append streamView.render().el
-			streamView.$el.fadeIn('fast')
+			streamView.$el.fadeIn 'fast'
 
 		addAll: ->
 			@streams.each @addOne, @
