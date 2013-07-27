@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<script src="resources/js/jquery-2.0.3.min.js"></script>
+	<script src="resources/js/underscore-min.js"></script>
+	<script src="resources/js/backbone-min.js"></script>
+	<script src="resources/js/backbone.localStorage-min.js"></script>
+	<script src="resources/js/app.js"></script>
+
+	<link href="resources/css/normalize.css" rel="stylesheet"/>
+	<link href="resources/css/main.css" rel="stylesheet"/>
+	<link href="resources/css/app.css" rel="stylesheet"/>
+
+	<title>Todo - LocalStorage</title>
+</head>
+<body>
+<section id="main" class="container">
+	<header>
+		<i class="icon"></i>
+	</header>
+	<div id="content">
+		<nav>
+			<div class="wrap">
+				<textarea autofocus="true"></textarea>
+				<menu>
+					<button id="submit">
+						<strong>게시</strong>
+					</button>
+				</menu>
+			</div>
+		</nav>
+		<ul id="streams"></ul>
+	</div>
+</section>
+</body>
+</html>
+<script id="todo-view" type="text/template">
+	<i class="thumbnail icon"></i>
+
+	<div class="text left">
+		<div class="author">
+			<strong>이용구</strong>
+		</div>
+		<%= text %>
+	</div>
+	<button class="delete">
+		<i class="icon"></i>
+	</button>
+</script>
