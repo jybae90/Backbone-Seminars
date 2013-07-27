@@ -36,6 +36,7 @@ jQuery ->
 		create: ->
 			val = @$('textarea').val()
 			if val.length > 0 then @streams.create text: @$('textarea').val()
+			@$('textarea').val ''
 
 		addOne: (model) ->
 			streamView = new StreamView model: model
