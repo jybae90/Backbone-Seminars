@@ -13,7 +13,7 @@ jQuery ->
 			@
 
 		delete: ->
-			@$el.fadeOut 'fast', ->
+			@$el.fadeOut 'fast', =>
 				@remove()
 				@model.destroy()
 
