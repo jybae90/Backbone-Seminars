@@ -9,7 +9,7 @@ jQuery ->
 
 		render: ->
 			@$el.html @template @model.toJSON()
-			@$el.hide()
+			@$el.hide().fadeIn 'fast'
 			@
 
 		delete: ->
@@ -42,7 +42,6 @@ jQuery ->
 		addOne: (model) ->
 			streamView = new StreamView model: model
 			@$('ul').append streamView.render().el
-			streamView.$el.fadeIn 'fast'
 
 		addAll: ->
 			@streams.each @addOne, @
