@@ -2,17 +2,13 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/C03 - LocalStorage/Example/resources/js/app.js" />
-        <item url="file://$PROJECT_DIR$/C02 - Link/Example/resources/js/app.js" />
         <item url="file://$PROJECT_DIR$/C02 - Link/song/link.js" />
-        <item url="file://$PROJECT_DIR$/C03 - LocalStorage/song/resources/js/app.js" />
+        <item url="file://$PROJECT_DIR$/C03 - LocalStorage/Example/resources/js/app.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/C03 - LocalStorage/Example/resources/js/app.js" />
-      <root url="file://$PROJECT_DIR$/C02 - Link/Example/resources/js/app.js" />
       <root url="file://$PROJECT_DIR$/C02 - Link/song/link.js" />
-      <root url="file://$PROJECT_DIR$/C03 - LocalStorage/song/resources/js/app.js" />
+      <root url="file://$PROJECT_DIR$/C03 - LocalStorage/Example/resources/js/app.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
