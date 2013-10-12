@@ -4,9 +4,9 @@ jQuery ->
 		template: _.template $('#shots-template').html()
 
 		render: ->
-		  @$el.html @template
-		  @$el.addClass('container').addClass('content')
-		  @
+			@$el.html @template
+			@$el.addClass('container').addClass('content')
+			@
 
 	class ExploreView extends Backbone.View
 		tagName: 'div'

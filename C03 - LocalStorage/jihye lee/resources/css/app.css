@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Grid definitions
+   ========================================================================== */
+
+.container {
+    width: 545px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+   Floated definitions
+   ========================================================================== */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after,
+.container:after {
+    clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix,
+.container {
+    zoom: 1;
+}
+
+/* ==========================================================================
+   Design definitions
+   ========================================================================== */
+
+#section {
+    margin-top: 150px;
+}
+
+#logo {
+    height: 40px;
+    border: 1px solid #133783;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+    background: #3b5998 url('logo.png') no-repeat center;
+    background-size: 103px 31px;
+}
+
+#content {
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px;
+}
+
+#nav {
+    border: 1px solid #b4bbcd;
+}
+
+#nav textarea {
+    border: 0px;
+    width: 477px;
+    height: 65px;
+    padding: 10px;
+    resize: none;
+    outline-style: none;
+
+}
+
+#buttons {
+    padding: 4px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e6e6e6;
+    text-align: right;
+}
+
+#buttons button {
+    background-color: #6079a9;
+    border: 1px solid #29447e;
+    border-bottom: 1px solid ##1a356e;
+    font-size: 12px;
+    color: #fff;
+    padding: 4px 12px 4px 12px ;
+    box-shadow: inset 0px 1px rgba(255, 255, 255, .2), inset 0px -1px rgba(0, 0, 0, .1);
+}
+
+#buttons button:active {
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, .2)
+}
+
+#streams {
+    border-top: 1px solid #ccc;
+    padding: 20px;
+}
+
+i {
+    background: url('image.jpg');
+}
+
+.author {
+    color: #3b5998;
+    font-size: 14px;
+}
+
+.text {
+    font-size: 13px;
+}
+
+.delete {
+    height: 13px;
+    border: none;
+    background: url('delete.png'), none;
+}
+
+.delete:active {
+    background: #3b5998 url('delete.png');
+    border-radius: 1.5px;
+
+}
+ul li {
+    margin: 0;
+    padding: 0;
+    outline-style: none;
+}
