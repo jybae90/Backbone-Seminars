@@ -1,16 +1,16 @@
 jQuery ->
-	class IntroView extends Backbone.View
+	class WorkView extends Backbone.View
 		tagName: 'div'
-		template: _.template $('#intro-template').html()
+		template: _.template $('#work-template').html()
 
 		render: ->
 			@$el.html @template
 			@$el.addClass('container').addClass('content')
 			@
 
-	class WorkView extends Backbone.View
-		tagName: 'p'
-		template: _.template $('#work-template').html()
+	class IntroView extends Backbone.View
+		tagName: 'div'
+		template: _.template $('#intro-template').html()
 
 		render: ->
 			@$el.html @template

@@ -5,12 +5,33 @@
 
   jQuery(function() {
     var AppView, IntroView, WorkView, _ref, _ref1, _ref2;
+    WorkView = (function(_super) {
+      __extends(WorkView, _super);
+
+      function WorkView() {
+        _ref = WorkView.__super__.constructor.apply(this, arguments);
+        return _ref;
+      }
+
+      WorkView.prototype.tagName = 'div';
+
+      WorkView.prototype.template = _.template($('#work-template').html());
+
+      WorkView.prototype.render = function() {
+        this.$el.html(this.template);
+        this.$el.addClass('container').addClass('content');
+        return this;
+      };
+
+      return WorkView;
+
+    })(Backbone.View);
     IntroView = (function(_super) {
       __extends(IntroView, _super);
 
       function IntroView() {
-        _ref = IntroView.__super__.constructor.apply(this, arguments);
-        return _ref;
+        _ref1 = IntroView.__super__.constructor.apply(this, arguments);
+        return _ref1;
       }
 
       IntroView.prototype.tagName = 'div';
@@ -24,27 +45,6 @@
       };
 
       return IntroView;
-
-    })(Backbone.View);
-    WorkView = (function(_super) {
-      __extends(WorkView, _super);
-
-      function WorkView() {
-        _ref1 = WorkView.__super__.constructor.apply(this, arguments);
-        return _ref1;
-      }
-
-      WorkView.prototype.tagName = 'p';
-
-      WorkView.prototype.template = _.template($('#work-template').html());
-
-      WorkView.prototype.render = function() {
-        this.$el.html(this.template);
-        this.$el.addClass('container').addClass('content');
-        return this;
-      };
-
-      return WorkView;
 
     })(Backbone.View);
     AppView = (function(_super) {
