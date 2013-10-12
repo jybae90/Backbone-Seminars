@@ -1,0 +1,46 @@
+html {
+    background: #2f4159;
+}
+
+.container {
+    width: 398px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    margin-top: 208px;
+}
+
+#logo i {
+    width: 308px;
+    height: 202px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("logo.png") no-repeat;
+    background-size: cover;
+}
+
+#login {
+    margin-top: 258px;
+}
+
+i.icon {
+    width: ;
+    height: ;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#login .person {
+    width: 29px;
+    height: 28px;
+    background-image: url("person.png");
+}
+
+#login textarea.id {
+    width: 343px;
+    height: 74px;
+}
