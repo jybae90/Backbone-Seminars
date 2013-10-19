@@ -1,62 +1,61 @@
-body {
-    background-image: linear-gradient(bottom, rgb(37,54,74) 27%, rgb(49,67,91) 62%);
-    background-image: -o-linear-gradient(bottom, rgb(37,54,74) 27%, rgb(49,67,91) 62%);
-    background-image: -moz-linear-gradient(bottom, rgb(37,54,74) 27%, rgb(49,67,91) 62%);
-    background-image: -webkit-linear-gradient(bottom, rgb(37,54,74) 27%, rgb(49,67,91) 62%);
-    background-image: -ms-linear-gradient(bottom, rgb(37,54,74) 27%, rgb(49,67,91) 62%);
-
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0.27, rgb(37,54,74)),
-        color-stop(0.62, rgb(49,67,91))
-    );
-    height: 667px;
+html {
+    background-color: #30425a;
 }
-
 section {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    width: 395px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-section #logo{
+section #logo {
     background-image: url('logo.png');
+    width: 290px;
+    height:190px;
     background-size: cover;
-    margin-right: auto;
-    margin-left: auto;
-    witdh: 200px;
-    height: 250px;
+    margin: 60px;
 }
 
-section #id{
+section header {
+    padding: 20px;
+    border-top: 1px solid #576474;
+    border-bottom: 1px solid #576474;
+}
+
+section menu {
+    margin-top: 0px;
+    padding: 20px;
+    border-bottom: 1px solid #576474;
+}
+
+section #id {
     background-image: url('person.png');
-    background-repeat: no-repeat;
+    width: 37px;
+    background-size: cover;
 }
 
-section #id textarea {
-    background-color: transparent;
-    border: 0px;
-    }
-
-section #password{
+section #password {
     background-image: url('secure.png');
-    background-repeat: no-repeat;
+    width: 37px;
+    background-size: cover;
 }
 
-section #password textarea {
+section #id textarea, #password textarea {
+    margin-left: 50px;
+    width: 330px;
+    height: 30px;
     background-color: transparent;
     border: 0px;
+
 }
 
 section button {
-    width: 395px;
-    height: 76px;
-    background-color: #009a9a;
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: #04bf95;
     color: #ffffff;
-    border-radius: 3px;
     border: 0px;
-
+    border-radius: 3px;
 }
