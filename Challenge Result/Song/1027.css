@@ -6,8 +6,10 @@
     float: right;
 }
 
-html {
-    font-family: helvetica;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 #sideMenu {
@@ -15,8 +17,9 @@ html {
     left: 0;
     bottom: 0;
     width: 200px;
-    padding: 30px 30px 30px 30px;
+    padding: 30px 30px 30px 200px;
     position: fixed;
+    font-family: helvetica;
     background: #000;
 }
 
