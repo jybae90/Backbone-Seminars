@@ -1,61 +1,54 @@
 html {
     background-color: #30425a;
 }
-section {
+
+.vertical {
     position: absolute;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -165px;
+    display: table;
+}
+
+.horizontal {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
 }
 
-section #logo {
-    background-image: url('logo.png');
-    width: 290px;
-    height:190px;
-    background-size: cover;
-    margin: 60px;
+#logo {
+    padding-bottom: 70px;
 }
 
-section header {
-    padding: 20px;
+#contents {
+    float: left;
+}
+
+#id {
     border-top: 1px solid #576474;
     border-bottom: 1px solid #576474;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-section menu {
-    margin-top: 0px;
-    padding: 20px;
+#password {
     border-bottom: 1px solid #576474;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-section #id {
-    background-image: url('person.png');
-    width: 37px;
-    background-size: cover;
-}
-
-section #password {
-    background-image: url('secure.png');
-    width: 37px;
-    background-size: cover;
-}
-
-section #id textarea, #password textarea {
-    margin-left: 50px;
-    width: 330px;
-    height: 30px;
+input {
     background-color: transparent;
     border: 0px;
-
+    width: 290px;
+    font-size: 13px;
 }
 
-section button {
-    margin: 10px;
-    width: 400px;
-    height: 40px;
+button {
+    width: 330px;
+    height: 50px;
     background-color: #04bf95;
     color: #ffffff;
+    font-size: 13px;
     border: 0px;
     border-radius: 3px;
 }
