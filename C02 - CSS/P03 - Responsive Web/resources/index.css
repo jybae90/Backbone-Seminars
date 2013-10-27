@@ -129,23 +129,31 @@ article {
 }
 
 article section {
-	min-width: 200px;
+	min-width: 320px;
 	max-width: 640px;
-	margin-bottom: 100px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #eee;
 }
 
-article section header {
+article section#picker {
+	border-bottom: 0;
+}
+
+article header {
+	min-width: 320px;
+	max-width: 640px;
 	padding: 14px 0;
 	border-top: 1px solid #dededc;
 	border-bottom: 1px solid #dededc;
 	cursor: pointer;
 }
 
-article section header:hover h3 {
+article header:hover h3 {
 	color: #666;
 }
 
-article section header h3 {
+article header h3 {
 	line-height: 12px;
 	font-size: 12px;
 	color: #b3b3b1;
@@ -190,4 +198,13 @@ article section .summary figure img.thumbnail {
 article section footer {
 	margin-top: 10px;
 	color: #b3b3b1;
+}
+
+article section footer a {
+	color: #b3b3b1;
+	text-decoration: none;
+}
+
+article section footer a:hover {
+	text-decoration: underline;
 }
