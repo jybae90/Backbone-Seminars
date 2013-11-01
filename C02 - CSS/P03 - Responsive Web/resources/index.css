@@ -73,7 +73,9 @@ aside {
 	min-width: 150px;
 	max-width: 500px;
 	position: fixed;
-	background: url('http://dnqgz544uhbo8.cloudfront.net/_/fp/img/home/15.Wb6bKV6jCtqnSZZDf8WyHw.jpg');
+	background: url('http://dnqgz544uhbo8.cloudfront.net/_/fp/img/home/15.Wb6bKV6jCtqnSZZDf8WyHw.jpg') center;
+	background-size: cover;
+	box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3)
 }
 
 aside #cover {
