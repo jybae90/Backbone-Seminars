@@ -1,3 +1,13 @@
+/* ==========================================================================
+ * User: Jihye Lee
+ * Date: 2013. 11. 02.
+ * Time: 오후 4:35
+ ========================================================================== */
+
+body {
+    font-family: helvetica;
+}
+
 .left {
     float: left;
 }
@@ -6,57 +16,117 @@
     float: right;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Helvetica;
+}
+
+input, button {
+    outline: none;
+}
 
 aside {
     top: 0;
-    left: 0;
     bottom: 0;
-    width: 200px;
-    padding: 30px 30px 30px 200px;
+    left: 0;
     position: fixed;
+    width: 200px;
     background: #14171c;
+    padding: 30px 30px 30px 200px
 }
 
 input {
     border: 0px;
-    font-size: 10px;
-    padding: 9px;
     border-radius: 2px;
     background-color: #353c44;
     color: #a9a9a9;
-    font-family: helvetica;
+    font-size: 10px;
+    width: 140px;
+    height: 25px;
+    padding: 0 7px;
 }
 
-button {
-    width: 30px;
-    height: 30px;
+aside #search button {
+    cursor: pointer;
     border: 0px;
-    border-radius: 2px;
-    outline: none;
-    background: url('magnify.png') no-repeat center;
-    background-color: #353c44;
-    background-size: 17px;
+    border-radius: 5px;
+    padding: 14px;
+    background: #353c44 url('magnify.png') no-repeat center;
+    background-size: 16px;
 }
+
 
 h1 {
-    font-size: 20px;
-    font-family: helvetica-bold;
-    padding-top: 50px;
+    padding-top: 20px;
+    font-size: 22px;
     color: #353c44;
 }
 
-h2 {
-    padding-top: 5px;
-    font-size: 15px;
+#subtitle {
+    font-size: 16px;
     color: #e6eef1;
-    font-family: helvetica-regular;
+    height: 10px;
+    padding-top: 12px;
 }
 
-nav {
-    margin-bottom: 30px;
+aside nav ul li {
+    height: 29px;
 }
 
-li {
-    font-size: 12px;
+aside nav ul li button {
+    background: #14171c;
+    border: 0px;
+    width: 100%;
+    padding: 0;
+}
+
+
+aside nav ul li button span:first-child {
+    font-size: 13px;
     color: #b5bec3;
 }
+
+aside nav ul li button span:last-child {
+    color: #14171c;
+    background: #353c44;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 5px;
+}
+
+aside nav ul li button:hover span:first-child {
+    font-size: 13px;
+    color: #fe6d5a;
+}
+
+aside nav ul li button:hover span:last-child {
+    color: #14171c;
+    background: #5a6573;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 5px;
+}
+
+
