@@ -1,0 +1,73 @@
+/* ==========================================================================
+ * User: Jihye Lee
+ * Date: 2013. 11. 05.
+ * Time: 오후 2:25
+ ========================================================================== */
+
+body {
+    font-family: helvetica;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Helvetica, nanumgothic;
+    background-color: #f2f4f4;
+}
+
+nav {
+    width: 120px;
+}
+
+aside {
+    background-color: #febd30;
+    box-shadow: 0px 2px 1px #f2f2f2;
+    width: 100%;
+    padding: 18px 50px 18px 1115px;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Myriad Pro";
+}
+
+article {
+    margin: 50px;
+}
+
+#logo {
+    background: transparent url('logo.png') no-repeat left;
+    background-size: 200px;
+    width: 200px;
+    height: 106px;
+}
+
+
+
