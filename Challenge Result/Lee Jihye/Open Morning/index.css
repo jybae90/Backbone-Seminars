@@ -103,3 +103,10 @@ article ul li .stream {
     padding: 15px;
     padding-top: 117px;
 }
+
+section {
+    display: table-cell;
+    padding-right: 30px;
+}
+
+
