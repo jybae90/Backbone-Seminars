@@ -1,7 +1,7 @@
 /* ==========================================================================
  * User: Jihye Lee
- * Date: 2013. 11. 02.
- * Time: 오후 4:35
+ * Date: 2013. 11. 05.
+ * Time: 오후 2:25
  ========================================================================== */
 
 body {
@@ -36,97 +36,95 @@ body {
     zoom: 1;
 }
 
-ul,li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: Helvetica;
-}
 
 input, button {
     outline: none;
+    background-color: transparent;
+    border: 0px;
 }
 
 aside {
+    position: fixed;
+    padding: 30px 30px 30px 200px;
+    width: 200px;
+    background-color: #14171c;
+    left: 0;
     top: 0;
     bottom: 0;
-    left: 0;
-    position: fixed;
-    width: 200px;
-    background: #14171c;
-    padding: 30px 30px 30px 200px
 }
 
+
 input {
-    border: 0px;
-    border-radius: 2px;
-    background-color: #353c44;
+    border: 0;
+    border-radius: 3px;
+    background: #353c44;
     color: #a9a9a9;
     font-size: 10px;
-    width: 140px;
-    height: 25px;
-    padding: 0 7px;
+    padding: 0 6px;
+    width: 150px;
+    height: 30px;
 }
 
 aside #search button {
-    cursor: pointer;
     border: 0px;
-    border-radius: 5px;
-    padding: 14px;
+    border-radius: 3px;
     background: #353c44 url('magnify.png') no-repeat center;
-    background-size: 16px;
+    background-size: 15px;
+    width: 30px;
+    height: 30px;
 }
 
-
-h1 {
-    padding-top: 20px;
-    font-size: 22px;
-    color: #353c44;
-}
-
-#subtitle {
-    font-size: 16px;
-    color: #e6eef1;
-    height: 10px;
-    padding-top: 12px;
-}
-
-aside nav ul li {
-    height: 29px;
-}
-
-aside nav ul li button {
-    background: #14171c;
-    border: 0px;
-    width: 100%;
+h1, h2, ul, li {
+    margin: 0;
     padding: 0;
+    list-style: none;
+    font-family: Helvetica, nanumgothic;
 }
 
+#title {
+    font-size: 20px;
+    color: #353c44;
+    font-family: helvetica-bold;
+    padding-top: 30px;
+}
 
-aside nav ul li button span:first-child {
+.sub {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #e6eef1;
+}
+
+ul li {
+    height: 32px;
+}
+
+ul li button {
+    width: 200px;
+    height: 30px;
+    padding: 0
+}
+
+ul li button span:first-child {
     font-size: 13px;
     color: #b5bec3;
 }
 
-aside nav ul li button span:last-child {
+ul li button span:last-child {
+    display: inline-block;
+    font-size: 7px;
     color: #14171c;
-    background: #353c44;
     padding: 5px;
-    border-radius: 7px;
-    font-size: 5px;
+    background-color: #353c44;
+    border-radius: 6px;
+    font-family: helvetica;
 }
 
-aside nav ul li button:hover span:first-child {
-    font-size: 13px;
-    color: #fe6d5a;
-}
+ul li button:hover span:first-child {
+     color:#fc4b4b;
+ }
 
-aside nav ul li button:hover span:last-child {
-    color: #14171c;
-    background: #5a6573;
-    padding: 5px;
-    border-radius: 7px;
-    font-size: 5px;
+ul li button:hover span:last-child {
+    background-color: #5a6573;
 }
 
 
