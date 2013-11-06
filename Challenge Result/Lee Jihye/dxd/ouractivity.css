@@ -77,14 +77,26 @@ nav span:hover {
 }
 
 article {
-    font-family: arial rounded mt bold;
-    font-size: 80px;
-    padding: 150px 40px;
+    padding: 180px 20px;
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
+}
+
+article ul li {
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    border-radius: 10px;
+    background: url('openmorning.png');
+    background-size: 250px;
+    display: table-cell;
+
+
+
 }
 
 

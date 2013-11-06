@@ -77,14 +77,32 @@ nav span:hover {
 }
 
 article {
-    font-family: arial rounded mt bold;
-    font-size: 80px;
-    padding: 150px 40px;
+    padding: 250px 40px;
+    font-family: "Apple SD Gothic Neo";
+
+}
+
+h1 {
+    font-size: 25px;
+    letter-spacing: -.5pt;
+    line-height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+section {
+    line-height: 28px;
+    letter-spacing: -.2pt;
+    font-size: 12px;
+    display: table-cell;
+    padding: 0px 0px 0px 40px;
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
+    outline: none;
 }
 
 
