@@ -4,8 +4,125 @@ Date: 2013/10/27
 Time: 11:16
 ============================================= */
 
-.title{
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix :before
+.clearfix :after {
+    content: ',';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-heighst: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix :after{
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+* {
+    margin: 0;
+    List-style: none;
+    font-family: Helvetica, "Apple SD Gothic Neo", nanumgothic;
+    padding: 0;
+}
+
+.input,
+button {
+    outline: none;
+}
+
+/* design template */
+
+aside {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    padding: 30px 30px 30px 200px;
+    position: fixed;
+    background: #14171c;
+}
+
+aside #searchBar input {
+    width: 150px;
+    height: 30px;
+    padding: 0 7px;
+    color: #fff;
+    border: 0;
+    background: #353c44;
+    border-radius: 2px;
+
+}
+
+aside #searchBar button {
+    width: 30px;
+    height: 30px;
+    background: #353c44 url("magnify.png") no-repeat center;
+    background-size: 16px;
+    border: 0;
+    border-radius: 2px;
+}
+
+aside .title {
     color: #353c44;
     font-size: 20px;
     padding-top: 40px;
+}
+
+aside nav .sub-title {
+    color: #e6eef1;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+aside nav li {
+    height: 33px;
+}
+
+aside nav li button {
+    width: 100%;
+    padding: 5px 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+aside nav li button span:first-child {
+    margin-top: 2px;
+    color: #b5bec3;
+    font-size: 15px;
+}
+
+aside nav li button span:last-child {
+    display: inline-block;
+    padding: 5px;
+    color: #14171c;
+    background: #353c44;
+    border-radius: 7px;
+}
+
+aside nav li button:hover span:first-child {
+    color: #ff5245;
+}
+
+aside nav li button:hover span:last-child {
+    background: #5a6573;
+}
+
+article {
+    margin-left: 430px;
+    padding: 100px;
 }
