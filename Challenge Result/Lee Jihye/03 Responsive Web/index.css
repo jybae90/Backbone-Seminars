@@ -1,0 +1,65 @@
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+aside {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    position: fixed;
+    background: url('background.jpg') center;
+    background-size: cover;
+}
+
+aside #cover {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    padding: 5%;
+}
+
+aside #cover h1,
+aside #cover p,
+aside #cover button {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+aside #cover h1 {
+    font-size: 30px;
+    font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+}
+
+aside #cover p {
+    font-family: "Times New Roman",Times,serif;
+    font-size: 17px;
+ }
+
+aside #cover p a {
+    text-decoration: underline;
+}
+
+aside #cover nav {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+aside #cover nav button {
+    width: 50%;
+    border: 0;
+    background-color: #00bb96;
+    border-radius: 3px;
+    color: white;
+    font-family: helvetica-light;
+    font-size: 13px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
