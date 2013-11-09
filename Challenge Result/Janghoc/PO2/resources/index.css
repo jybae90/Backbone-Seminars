@@ -19,7 +19,7 @@ Time: 11:16
     overflow: hidden;
     visibility: hidden;
     font-size: 0;
-    line-heighst: 0;
+    line-height: 0;
     width: 0;
     height: 0;
 }
@@ -34,7 +34,7 @@ Time: 11:16
 
 * {
     margin: 0;
-    List-style: none;
+    list-style: none;
     font-family: Helvetica, "Apple SD Gothic Neo", nanumgothic;
     padding: 0;
 }
