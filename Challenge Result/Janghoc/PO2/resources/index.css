@@ -50,7 +50,7 @@ aside {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 0;
+    width: 200px;
     padding: 30px 30px 30px 200px;
     position: fixed;
     background: #14171c;
