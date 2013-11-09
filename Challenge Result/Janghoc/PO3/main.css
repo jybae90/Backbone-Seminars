@@ -4,11 +4,20 @@ Date: 2013/11/9
 Time: 12:44
 ============================================= */
 
+article {
+    top: 0;
+    left: 30%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 50px 85px;
+}
+
 aside {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 50%;
+    width: 30%;
     min-width: 150px;
     max-width: 500px;
     position: fixed;
