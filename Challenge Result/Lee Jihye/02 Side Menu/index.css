@@ -116,7 +116,8 @@ ul li button span:last-child {
     padding: 5px;
     background-color: #353c44;
     border-radius: 6px;
-    font-family: helvetica;
+    font-family: "Helvetica Neue";
+	font-weight: 100;
 }
 
 ul li button:hover span:first-child {
