@@ -1,0 +1,60 @@
+html {
+    background-color: #30425a;
+}
+
+.vertical {
+    position: absolute;
+    left: 50%;
+    margin-left: -165px;
+    display: table;
+    height: 100%;
+}
+
+.horizontal {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+#logo {
+    padding-bottom: 70px;
+}
+
+#contents {
+    float: left;
+}
+
+#id {
+    border-top: 1px solid #576474;
+    border-bottom: 1px solid #576474;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#password {
+    border-bottom: 1px solid #576474;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+input {
+    background-color: transparent;
+    border: 0px;
+    width: 290px;
+    font-size: 13px;
+    font-family: helvetica;
+    outline: none;
+}
+
+button {
+    width: 330px;
+    height: 45px;
+    background-color: #00bab8;
+    color: #ffffff;
+    font-size: 14px;
+    border: 0px;
+    border-radius: 4px;
+    font-family: helvetica;
+}

@@ -24,6 +24,41 @@ button {
 body {
 	font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
 	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 /* ==========================================================================
@@ -35,9 +70,12 @@ aside {
 	left: 0;
 	bottom: 0;
 	width: 30%;
+	min-width: 150px;
 	max-width: 500px;
-	position: absolute;
-	background: url('http://dnqgz544uhbo8.cloudfront.net/_/fp/img/home/15.Wb6bKV6jCtqnSZZDf8WyHw.jpg');
+	position: fixed;
+	background: url('http://dnqgz544uhbo8.cloudfront.net/_/fp/img/home/15.Wb6bKV6jCtqnSZZDf8WyHw.jpg') center;
+	background-size: cover;
+	box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3)
 }
 
 aside #cover {
@@ -61,13 +99,13 @@ aside #cover p a {
 	text-decoration: underline;
 }
 
-aside #cover menu {
+aside #cover nav {
 	margin-top: 20px;
 	padding-top: 20px;
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-aside #cover menu button {
+aside #cover nav button {
 	width: 50%;
 	padding: 10px 0;
 	color: white;
@@ -79,7 +117,7 @@ aside #cover menu button {
 	cursor: pointer;
 }
 
-aside #cover menu button:hover {
+aside #cover nav button:hover {
 	background-image: linear-gradient(to bottom,rgba(0,0,0,0.05),rgba(0,0,0,0.05));
 }
 
@@ -89,4 +127,86 @@ article {
 	right: 0;
 	bottom: 0;
 	position: absolute;
+	padding: 50px 85px;
+}
+
+article section {
+	min-width: 320px;
+	max-width: 640px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #eee;
+}
+
+article section#picker {
+	border-bottom: 0;
+}
+
+article header {
+	min-width: 320px;
+	max-width: 640px;
+	padding: 14px 0;
+	border-top: 1px solid #dededc;
+	border-bottom: 1px solid #dededc;
+	cursor: pointer;
+}
+
+article header:hover h3 {
+	color: #666;
+}
+
+article header h3 {
+	line-height: 12px;
+	font-size: 12px;
+	color: #b3b3b1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+article section .summary {
+	margin-top: 35px;
+	position: relative;
+}
+
+article section .summary .body {
+	margin-right: 80px;
+	cursor: pointer;
+}
+
+article section .summary .body h2 {
+	font-size: 32px;
+}
+
+article section .summary .body p {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+article section .summary figure {
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	cursor: pointer;
+}
+
+article section .summary figure img.thumbnail {
+	width: inherit;
+	height: inherit;
+	border-radius: 25px;
+}
+
+article section footer {
+	margin-top: 10px;
+	color: #b3b3b1;
+}
+
+article section footer a {
+	color: #b3b3b1;
+	text-decoration: none;
+}
+
+article section footer a:hover {
+	text-decoration: underline;
 }

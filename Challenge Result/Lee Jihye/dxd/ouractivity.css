@@ -1,0 +1,103 @@
+/* ==========================================================================
+ * User: Jihye Lee
+ * Date: 2013. 11. 05.
+ * Time: 오후 2:25
+ ========================================================================== */
+
+body {
+    font-family: helvetica;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    background: url('1102.jpg')
+}
+
+body, aside, nav, article {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+aside {
+    padding: 80px 40px 0px 40px;
+    cursor: pointer;
+
+}
+article {
+    color: #ffffff;
+}
+
+#logo {
+    background: url('dxd.png') no-repeat;
+    width: 150px;
+    height: 108px;
+}
+
+nav {
+    font-family: helvetica-light;
+    font-size: 13px;
+
+}
+
+nav span {
+    padding-right: 20px;
+}
+
+nav span:hover {
+    color: #627083;
+}
+
+article {
+    padding: 180px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+article ul li {
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    border-radius: 10px;
+    background: url('openmorning.png');
+    background-size: 250px;
+    display: table-cell;
+
+
+
+}
+
+
+

@@ -1,0 +1,112 @@
+/* ==========================================================================
+ * User: Jihye Lee
+ * Date: 2013. 11. 05.
+ * Time: 오후 2:25
+ ========================================================================== */
+
+body {
+    font-family: helvetica;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Helvetica, nanumgothic;
+    background-color: #f2f4f4;
+}
+
+nav {
+    width: 120px;
+}
+
+aside {
+    background-color: #febd30;
+    box-shadow: 0px 2px 1px #f2f2f2;
+    width: 100%;
+    padding: 18px 10px 18px 1100px;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Myriad Pro";
+}
+
+article {
+    margin: 50px;
+}
+
+#logo {
+    background: transparent url('logo.png') no-repeat left;
+    background-size: 200px;
+    width: 200px;
+    height: 106px;
+}
+
+article ul {
+    padding: 0
+}
+
+article section ul li {
+    list-style: none;
+    width: 273px;
+    height: 324px;
+    border: 1px #d5d8d8 solid;
+    margin-top: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #ffffff url('image.png') no-repeat;
+    background-size: 273px;
+}
+
+article ul li .number {
+    color: #ffffff;
+    font-size: 43px;
+    font-family: helvetica-bold;
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 125px;
+}
+
+article ul li .stream {
+    font-size: 15px;
+    color: #bcbaba;
+    font-family: helvetica;
+    height: 50px;
+    border: 0;
+    padding: 15px;
+    padding-top: 117px;
+}
+
+section {
+    display: table-cell;
+    padding-right: 30px;
+}
+
+
