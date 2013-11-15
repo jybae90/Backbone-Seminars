@@ -61,5 +61,101 @@ aside #cover nav button {
     font-size: 13px;
     padding: 10px 0;
     cursor: pointer;
+    outline: none;
+}
+
+article {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+    position: absolute;
+    padding: 50px 80px;
+}
+
+h1,h2,h3 {
+    padding: 0;
+    margin: 0;
+}
+
+h2, h3 {
+    font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+}
+
+p, footer {
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    margin: 0;
+    padding: 0;
+}
+
+article header {
+    padding: 13px 0;
+    border-top: 1px solid #dededc;
+    border-bottom: 1px solid #dededc;
+    cursor: pointer;
+}
+
+article section {
+    border-bottom: 1px solid #dededc;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    min-width: 300px;
+}
+
+article section#picker {
+    border-bottom: 0;
+}
+
+article header h3 {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #b3b3b1;
+    letter-spacing: 2px;
+}
+
+article section .summary {
+    margin-top: 35px;
+    position: relative;
+}
+
+article section .summary .body {
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+article section .summary .body h2 {
+    font-size: 32px;
+}
+
+article section .summary .body p {
+    margin-top: 10px;
+}
+
+article section .summary figure {
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+article section .summary figure img.thumbnail {
+    width: inherit;
+    height: inherit;
+    border-radius: 25px;
+}
+
+article section footer {
+    margin-top: 10px;
+    color: #b3b3b1;
+}
+
+article section footer a {
+    color: #b3b3b1;
+    text-decoration: none;
+}
+
+article section footer a:hover {
+    text-decoration: underline;
 }
 
