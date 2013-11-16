@@ -5,104 +5,105 @@
  ========================================================================== */
 
 body {
-    font-family: helvetica;
-    overflow: hidden;
+	font-family: helvetica;
+	overflow: hidden;
 }
 
 .left {
-    float: left;
+	float: left;
 }
 
 .right {
-    float: right;
+	float: right;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: '.';
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    font-size: 0;
-    line-height: 0;
-    width: 0;
-    height: 0;
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 
 .clearfix {
-    zoom: 1;
+	zoom: 1;
 }
 
 body {
-    background: url('1102.jpg')
+	background: url('1102.jpg')
 }
 
 body, aside, nav, article {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 aside {
-    padding: 80px 40px 0px 40px;
-    cursor: pointer;
+	padding: 80px 40px 0px 40px;
+	cursor: pointer;
 
 }
+
 article {
-    color: #ffffff;
+	color: #ffffff;
 }
 
 #logo {
-    background: url('dxd.png') no-repeat;
-    width: 150px;
-    height: 108px;
+	background: url('dxd.png') no-repeat;
+	width: 150px;
+	height: 108px;
 }
 
 nav {
-    font-family: helvetica-light;
-    font-size: 13px;
+	font-family: helvetica-light;
+	font-size: 13px;
 
 }
 
 nav span {
-    padding-right: 20px;
+	padding-right: 20px;
 }
 
 nav span:hover {
-    color: #627083;
+	color: #627083;
 }
 
 article {
-    padding: 250px 40px;
-    font-family: "Apple SD Gothic Neo";
+	padding: 250px 40px;
+	font-family: "Apple SD Gothic Neo";
 
 }
 
 h1 {
-    font-size: 25px;
-    letter-spacing: -.5pt;
-    line-height: 40px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: right;
+	font-size: 25px;
+	letter-spacing: -.5pt;
+	line-height: 40px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
 }
 
 section {
-    line-height: 28px;
-    letter-spacing: -.2pt;
-    font-size: 12px;
-    display: table-cell;
-    padding: 0px 0px 0px 40px;
+	line-height: 28px;
+	letter-spacing: -.2pt;
+	font-size: 12px;
+	display: table-cell;
+	padding: 0px 0px 0px 40px;
 }
 
 a {
-    text-decoration: none;
-    color: #ffffff;
-    outline: none;
+	text-decoration: none;
+	color: #ffffff;
+	outline: none;
 }
 
 
