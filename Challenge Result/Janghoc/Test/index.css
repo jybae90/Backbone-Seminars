@@ -4,6 +4,28 @@ Date: 2013/11/16
 Time: 16:01
 ============================================= */
 
-p {
-    padding-top: 0.5em;
+div {
+    width:200px;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #999;
+    font-size: 0.85em;
+    float: left;
+    margin: 40px 10px;
+}
+span {
+    color: red;
+    font-weight:bold;
+}
+.visible {
+    overflow: visible;
+}
+.hidden {
+    overflow: hidden;
+}
+.scroll {
+    overflow: scroll;
+}
+.auto {
+    overflow: auto;
 }
