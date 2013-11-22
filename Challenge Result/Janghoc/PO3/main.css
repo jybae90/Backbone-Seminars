@@ -35,6 +35,18 @@ body {
     float: right;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
 .clearfix:after {
     clear: both;
 }
@@ -56,19 +68,12 @@ aside {
     left: 0;
     bottom: 0;
     width: 30%;
-    min-width: 150px;
+    min-width: 250px;
     max-width: 500px;
     position: fixed;
-    background: url('http://imgnews.naver.com/image/139/2010/08/05/SK00705_20100805_240101.jpg') center;
+    background: url('http://pds26.egloos.com/pds/201301/17/87/c0071387_50f7826560722.jpg') center;
     background-size: cover;
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3)
-}
-
-aside #cover {
-    bottom: 0;
-    width: 90%;
-    position: absolute;
-    padding: 5%;
 }
 
 aside #cover {
@@ -88,13 +93,17 @@ aside #cover h1 {
     font-size: 32px;
 }
 
+aside #cover p a {
+    text-decoration: underline;
+}
+
 aside #cover nav {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-aside #cover nav button{
+aside #cover nav button {
     width: 50%;
     padding: 10px 0;
     color: white;
@@ -107,11 +116,8 @@ aside #cover nav button{
 }
 
 aside #cover nav button:hover {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.05)));
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.05),rgba(0,0,0,0.05));
 }
-
-
-/* article */
 
 article {
     top: 0;
@@ -181,6 +187,12 @@ article section .summary figure {
     height: 50px;
     position: absolute;
     cursor: pointer;
+}
+
+article section .summary figure img.thumbnail {
+    width: inherit;
+    height: inherit;
+    border-radius: 25px;
 }
 
 article section footer {
