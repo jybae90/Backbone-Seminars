@@ -1,3 +1,25 @@
+/* ==========================================================================
+ * User: Jihye Lee
+ * Date: 2013. 11. 16.
+ * Time: 오후 05:04
+ ========================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+body,
+a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased !important;
+}
+
 .left {
     float: left;
 }
@@ -5,3 +27,122 @@
 .right {
     float: right;
 }
+
+.icon {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url('sprite.png');
+}
+
+/*
+Header
+*/
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 105px;
+    background: #f8de00;
+    position: fixed;
+    z-index: 2;
+}
+
+header #logo,
+header nav {
+    height: inherit;
+}
+
+header #logo {
+    color: #fff;
+    display: table;
+    position: relative;
+}
+
+header #logo a {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-left: 20px;
+    letter-spacing: -1px;
+    line-height: 0.9;
+}
+
+header #logo a sub {
+    font-size: 1rem;
+    margin-left: .1rem;
+    bottom: 0;
+}
+
+header nav {
+    display: table;
+    background-color: #fff;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav span a {
+    margin-left: 30px;
+    display: inline-block;
+    color: #1b1b1b;
+    opacity: .4;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+header nav span.menu a .magnifier {
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    background-position: -90px -20px;
+}
+
+header nav span.view button {
+    top: -2px;
+    border: 0;
+    cursor: pointer;
+    width: 17px;
+    height: 11px;
+    opacity: .4;
+    margin-right: 2%;
+}
+
+header nav span.view button.grid {
+    background-position: -110px -20px;
+}
+
+header nav span.view button.list {
+    background-position: -130px -20px;
+}
+
+header nav span.extra a.twitter {
+    top: 5px;
+    width: 24px;
+    height: 19px;
+    display: inline-block;
+    position: relative;
+    opacity: .4;
+    background-position: -150px -20px;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 930px) {
+    header #logo {
+        width: 20%;
+    }
+    header nav {
+        width: 80%;
+    }
+}
+
+
+
