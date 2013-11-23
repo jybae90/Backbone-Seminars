@@ -1,0 +1,278 @@
+/* ==========================================================================
+ * User: Lier
+ * Date: 2013. 11. 15.
+ * Time: 오후 7:27
+ ========================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html,
+body,
+a {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.icon {
+	display: inline-block;
+	position: relative;
+	background-image: url("sprite.png");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 244px 104px;
+}
+
+/* ==========================================================================
+ * Header
+========================================================================== */
+
+header {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 105px;
+	background: #f8de00;
+	position: fixed;
+	z-index: 2;
+}
+
+header #logo,
+header nav {
+	height: inherit;
+}
+
+header #logo {
+	display: table;
+	position: relative;
+	color: #fff;
+}
+
+header #logo a {
+	display: table-cell;
+	padding-left: 20px;
+	vertical-align: middle;
+	font-size: 1.75rem;
+	font-weight: bold;
+	line-height: 0.9;
+	letter-spacing: -1px;
+}
+
+header #logo a sub {
+	margin-left: .1rem;
+	font-size: 1rem;
+}
+
+header nav {
+	display: table;
+	background: #fff;
+}
+
+header nav span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+header nav span.views-style {
+	width: 25%;
+}
+
+header nav span a {
+	display: inline-block;
+	margin-left: 30px;
+	color: #1b1b1b;
+	font-weight: bold;
+	font-size: 0.8125rem;
+	text-decoration: none;
+	opacity: .4;
+}
+
+header nav span a:hover {
+	opacity: 1;
+}
+
+header nav span a,
+header nav span .icon,
+header nav span a:hover,
+header nav span .icon:hover {
+	transition: opacity 0.15s linear;
+}
+
+header nav span.main a .magnifier {
+	top: 2px;
+	width: 12px;
+	height: 12px;
+	margin-left: 10px;
+	background-position: -90px -20px;
+}
+
+header nav span.views-style button {
+	top: -2px;
+	width: 17px;
+	height: 11px;
+	margin-right: 2%;
+	border: 0;
+	opacity: .4;
+	cursor: pointer;
+}
+
+header nav span.views-style button:hover {
+	opacity: 1;
+}
+
+header nav span.views-style button.grid {
+	background-position: -110px -20px;
+}
+
+header nav span.views-style button.list {
+	background-position: -130px -20px;
+}
+
+header nav span.extra a.twitter {
+	top: 5px;
+	width: 24px;
+	height: 19px;
+	display: inline-block;
+	position: relative;
+	opacity: .4;
+	background-position: -150px -20px;
+}
+
+header nav span.extra a.twitter:hover {
+	opacity: 1;
+}
+
+/* ==========================================================================
+ * Content
+========================================================================== */
+
+#content {
+	margin-top: 105px;
+}
+
+#content .about {
+	padding: 50px 30px;
+	color: #fff;
+	font-size: 3.125rem;
+	font-weight: bold;
+	background: #343434;
+	letter-spacing: -1px;
+	line-height: 3.2rem;
+}
+
+#content #posts {
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+}
+
+#content #posts li {
+	float: left;
+	display: block;
+	-webkit-flex: 1 1 160px;
+	min-width: 160px;
+	max-width: 320px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#content #posts li img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+#content #posts li .details {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	background: #f8de00;
+	transition: opacity 0.15s linear;
+}
+
+#content #posts li .details span {
+	display: inline-block;
+	padding: 20px;
+	color: #fff;
+	font-size: 1.9rem;
+	font-weight: bold;
+	line-height: 1.9rem;
+	transition: opacity 0.15s linear;
+}
+
+#content #posts li:hover .details {
+	opacity: 1;
+}
+
+/* ==========================================================================
+ * Responsive
+========================================================================== */
+
+@media only screen and (min-width: 930px) {
+	header #logo {
+		width: 20%;
+	}
+	header nav {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	header #logo {
+		width: 100%;
+	}
+	header nav {
+		width: 100%;
+		display: table;
+	}
+
+  header nav span.views-style {
+	  width: 10%;
+  }
+
+  #content .about {
+	  display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+	header nav {
+		display: none;
+	}
+}

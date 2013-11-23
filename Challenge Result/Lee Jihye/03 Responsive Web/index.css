@@ -6,60 +6,136 @@
     float: right;
 }
 
+h1, button, header {
+    font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    margin: 0;
+}
+
+
+
+p, footer {
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    margin: 0;
+}
+
 aside {
     top: 0;
+    width: 30%;
     left: 0;
     bottom: 0;
-    width: 30%;
     position: fixed;
     background: url('background.jpg') center;
     background-size: cover;
+    color: white;
+
 }
 
 aside #cover {
-    position: absolute;
     bottom: 0;
-    width: 90%;
+    height: 180px;
     padding: 5%;
-}
-
-aside #cover h1,
-aside #cover p,
-aside #cover button {
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-aside #cover h1 {
-    font-size: 30px;
-    font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    width: 90%;
+    position: absolute;
 }
 
 aside #cover p {
-    font-family: "Times New Roman",Times,serif;
-    font-size: 17px;
- }
+    margin-top: 5px;
+}
 
-aside #cover p a {
+aside #cover a {
     text-decoration: underline;
 }
 
 aside #cover nav {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 aside #cover nav button {
-    width: 50%;
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
     border: 0;
-    background-color: #00bb96;
-    border-radius: 3px;
     color: white;
-    font-family: helvetica-light;
-    font-size: 13px;
-    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #0acbc0;
+}
+
+article {
+    top: 0;
+    right: 0;
+    left: 30%;
+    bottom: 0;
+    position: absolute;
+    padding: 50px 160px 50px 85px;
+}
+
+h3 {
+    margin: 0;
+}
+
+article header {
+    border-top: 1px solid #dededc;
+    border-bottom: 1px solid #dededc;
+    padding: 13px 0;
+    text-transform: uppercase;
+    color: #b3b3b1;
+    font-size: 10px;
+    letter-spacing: 2px;
     cursor: pointer;
 }
+
+article header h3:hover{
+    color: #999998;
+}
+
+article section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dededc;
+}
+
+article section#picker {
+    border-bottom: 0;
+}
+
+article section .summary {
+    position: relative;
+    margin-top: 30px;
+}
+
+article section .summary .body {
+    margin-right: 90px;
+}
+
+article section .summary .body h1 {
+    font-size: 32px;
+}
+
+article section .summary .body p {
+    margin-top: 13px;
+    font-size: 18px;
+}
+
+article section .summary figure {
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+article section .summary figure img.thumbnail {
+    width: inherit;
+    height: inherit;
+    border-radius: 25px;
+}
+
+article section footer {
+    margin-top: 10px;
+    color: #b3b3b1;
+}
+
+
 

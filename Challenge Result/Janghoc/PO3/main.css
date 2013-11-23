@@ -4,26 +4,76 @@ Date: 2013/11/9
 Time: 12:44
 ============================================= */
 
-article {
-    top: 0;
-    left: 30%;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    padding: 50px 85px;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+h1,
+h2,
+h3 {
+    font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-weight: 700;
+}
+
+button {
+    font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-weight: 400;
+}
+
+body {
+    font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Design Template */
 
 aside {
     top: 0;
     left: 0;
     bottom: 0;
     width: 30%;
-    min-width: 150px;
+    min-width: 250px;
     max-width: 500px;
     position: fixed;
-    background: url('http://hackersnewsbulletin.com/wp-content/uploads/2013/03/jack-dorsey-techcrunch-disrupt-sf-2012_pop_20294-11.jpg') center;
+    background: url('http://pds26.egloos.com/pds/201301/17/87/c0071387_50f7826560722.jpg') center;
     background-size: cover;
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.5)
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3)
 }
 
 aside #cover {
@@ -67,4 +117,94 @@ aside #cover nav button {
 
 aside #cover nav button:hover {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.05),rgba(0,0,0,0.05));
+}
+
+article {
+    top: 0;
+    left: 30%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 50px 85px;
+}
+
+article section {
+    min-width: 320px;
+    max-width: 640px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+article section#picker {
+    border-bottom: 0;
+}
+
+article header {
+    min-width: 320px;
+    max-width: 640px;
+    padding: 14px 0;
+    border-top: 1px solid #dededc;
+    border-bottom: 1px solid #dededc;
+    cursor: pointer;
+}
+
+article header:hover h3 {
+    color: #666;
+}
+
+article header h3 {
+    line-height: 12px;
+    font-size: 12px;
+    color: #b3b3b1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+article section .summary {
+    margin-top: 35px;
+    position: relative;
+}
+
+article section .summary .body {
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+article section .summary .body h2 {
+    font-size: 32px;
+}
+
+article section .summary .body p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+article section .summary figure {
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
+article section .summary figure img.thumbnail {
+    width: inherit;
+    height: inherit;
+    border-radius: 25px;
+}
+
+article section footer {
+    margin-top: 10px;
+    color: #b3b3b1;
+}
+
+article section footer a {
+    color: #b3b3b1;
+    text-decoration: none;
+}
+
+article section footer a:hover {
+    text-decoration: underline;
 }
