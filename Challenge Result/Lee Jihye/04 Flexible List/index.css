@@ -34,11 +34,10 @@ a {
     background-color: transparent;
     background-repeat: no-repeat;
     background-image: url('sprite.png');
+    background-size: 244px 104px;
 }
 
-/*
-Header
-*/
+/* Header */
 
 header {
     top: 0;
@@ -47,7 +46,7 @@ header {
     height: 105px;
     background: #f8de00;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
 }
 
 header #logo,
@@ -85,6 +84,10 @@ header nav {
 header nav span {
     display: table-cell;
     vertical-align: middle;
+}
+
+header span.view {
+    width: 25%;
 }
 
 header nav span a {
@@ -131,6 +134,46 @@ header nav span.extra a.twitter {
     position: relative;
     opacity: .4;
     background-position: -150px -20px;
+}
+
+/* Content */
+
+#content {
+    margin-top: 105px;
+}
+
+#content .about {
+    padding: 50px 30px;
+    background: #343434;
+    color: #fff;
+    font-size: 3.125rem;
+    letter-spacing: -1px;
+    font-weight: bold;
+    line-height: 51px;
+}
+
+#content #post {
+    display: -webkit-flex;
+}
+
+#content #post li {
+    float: left;
+    display: block;
+    min-width: 160px;
+    max-width: 320px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#content #post li img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#content #post li .detail span {
+    padding: 20px;
+    color: #fff;
 }
 
 /* Responsive */
