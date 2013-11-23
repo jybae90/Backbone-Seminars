@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/* ==========================================================================
+ * Design Template
+========================================================================== */
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    padding: 30px 30px 30px 200px;
+    background: #14171c;
+}
+
+#search input {
+    width: 150px;
+    height: 30px;
+    padding: 0 7px;
+    border-radius: 2px;
+    color: white;
+    background: #353c44;
+}
+
+#search button {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    background: #353c44 url(magnify.png) no-repeat center;
+    background-size: 16px;
+}
+
+#title {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #353c44;
+}
+
+#sub-title {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e6eef1;
+}
+
+nav li {
+    list-style: none;
+    height: 33px;
+}
+
+nav ul li button {
+    width: 100%;
+    background: none;
+    cursor: pointer;
+}
+
+nav button span:first-child {
+    font-size: 15px;
+    color: #b5bec3;
+}
+
+nav button span:last-child {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 11px;
+    color: #14171c;
+    background: #353c44;
+}
+
+nav button:hover span:first-child {
+    color: #ff5245;
+}
+
+nav button:hover span:last-child {
+    background: #5a6573;
+}
+
+article {
+    margin-left: 430px;
+    padding: 100px;
+}
