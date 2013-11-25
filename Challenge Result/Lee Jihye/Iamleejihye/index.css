@@ -1,0 +1,150 @@
+/* ==========================================================================
+ * User: Jihye Lee
+ * Date: 2013. 11. 25.
+ * Time: 오후 04:52
+ ========================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+body,
+a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url('sprite.png');
+    background-size: 140px 146px;
+}
+
+/* Aside */
+
+aside {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 8% 5%;
+    min-width: 230px;
+    max-width: 500px;
+    background-color: #d1d3d4;
+}
+
+aside #cover a .logo {
+    width: 140px;
+    height: 95px;
+    position: relative;
+    left: 20%;
+    background-position: 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+aside nav {
+    padding-top: 40px;
+    font-size: 10px;
+    font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;;
+    line-height: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    left: 20%
+}
+
+aside nav ul li:hover {
+    color: #939598;
+}
+
+
+aside #extra {
+    position: relative;
+    left: 20%;
+    padding-top: 35px;
+}
+
+aside #extra button {
+    border: 0;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    margin-right: 3px;
+}
+
+aside #extra button.instagram {
+    background-position: 0 -96px;
+}
+
+aside #extra button.facebook {
+    background-position: -25px -96px;
+}
+
+aside #extra button.tumblr {
+    background-position: -50px -96px;
+}
+
+aside #extra button.mail {
+    background-position: -75px -96px;
+}
+
+aside #extra button.instagram:hover {
+    background-position: 0 -121px;
+}
+
+aside #extra button.facebook:hover {
+    background-position: -25px -121px;
+}
+
+aside #extra button.tumblr:hover {
+    background-position: -50px -121px;
+}
+
+aside #extra button.mail:hover {
+    background-position: -75px -121px;
+}
+
+aside #copyright {
+    font-size: 9px;
+    color: #939598;
+    position: relative;
+    left: 20%;
+    padding-top: 20px;
+}
+
+/* Article */
+
+article {
+    top: 0;
+    right: 30%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 80px 100px;
+}
+
+article section {
+    min-width: 320px;
+    max-width: 640px;
+}
