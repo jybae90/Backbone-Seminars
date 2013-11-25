@@ -43,7 +43,7 @@ aside {
     right: 0;
     bottom: 0;
     position: fixed;
-    padding-top: 80px;
+    padding-top: 13%;
     width: 23%;
     max-width: 500px;
     min-width: 200px;
@@ -55,9 +55,13 @@ aside #cover a .logo {
     width: 140px;
     height: 95px;
     position: relative;
-    left: 27%;
+    left: 25%;
     background-position: 0 0;
 }
+aside #cover a .logo:hover {
+    opacity: .8;
+}
+
 
 a {
     text-decoration: none;
@@ -125,8 +129,9 @@ article {
     right: 23%;
     left: 0;
     top: 0;
+    bottom: 0;
     position: absolute;
-    padding: 70px 90px;
+    padding: 13% 5%;
     background-color: #f1f2f2;
 }
 
@@ -136,9 +141,9 @@ article ul li {
 
 article ul li .content-block {
     width: 29.6%;
-    min-width: 200px;
+    min-width: 150px;
     float: left;
-    height: 180px;
+    height: 130px;
     background-color: #fff;
     border-radius: 6px;
     margin-right: 30px;
@@ -163,6 +168,7 @@ article ul li .content-block .web {
     top: 0;
     position: relative;
     padding: 10px;
+    letter-spacing: 1px;
     background-color: #2384c6;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
@@ -172,6 +178,7 @@ article ul li .content-block .graphic {
     top: 0;
     position: relative;
     padding: 10px;
+    letter-spacing: 1px;
     background-color: #faa61a;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
@@ -181,16 +188,53 @@ article ul li .content-block .illustration {
     top: 0;
     position: relative;
     padding: 10px;
+    letter-spacing: 1px;
     background-color: #ed1260;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
 }
 
-article ul li .content-block .video {
+article ul li .content-block .editorial {
     top: 0;
     position: relative;
     padding: 10px;
+    letter-spacing: 1px;
     background-color: #8f52a1;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
+}
+
+article ul li .content-block .resume {
+    top: 0;
+    position: relative;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color: #40bb87;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+article ul li .content-block:hover {
+    opacity: .8;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+article ul li .content-block .detail {
+    color: #d1d3d4;
+    position: relative;
+    padding: 25px 12px;
+}
+
+article ul li .content-block .detail h1 {
+    color: #a1a2a4;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    padding-top: 4px;
+}
+
+article ul li .content-block .detail h1.korean {
+    font-family: nanumgothic, "Apple SD Gothic Neo";
+    letter-spacing: -1.5px;
 }
