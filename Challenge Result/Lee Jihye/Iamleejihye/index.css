@@ -135,7 +135,7 @@ article ul li {
 }
 
 article ul li .content-block {
-    width: 33.33333%;
+    width: 29.6%;
     min-width: 200px;
     float: left;
     height: 180px;
@@ -145,7 +145,7 @@ article ul li .content-block {
     margin-bottom: 25px;
     box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
     color: #fff;
-    font-size: 13px;
+    font-size: 11px;
     font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
     font-weight: 500;
 }
@@ -153,16 +153,16 @@ article ul li .content-block {
 article ul li .content-block .app {
     top: 0;
     position: relative;
-    height: 37px;
     background-color: #71bf44;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
+    padding: 10px;
 }
 
 article ul li .content-block .web {
     top: 0;
     position: relative;
-    height: 37px;
+    padding: 10px;
     background-color: #2384c6;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
@@ -171,10 +171,26 @@ article ul li .content-block .web {
 article ul li .content-block .graphic {
     top: 0;
     position: relative;
-    height: 37px;
+    padding: 10px;
     background-color: #faa61a;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
 }
 
+article ul li .content-block .illustration {
+    top: 0;
+    position: relative;
+    padding: 10px;
+    background-color: #ed1260;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
 
+article ul li .content-block .video {
+    top: 0;
+    position: relative;
+    padding: 10px;
+    background-color: #8f52a1;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
