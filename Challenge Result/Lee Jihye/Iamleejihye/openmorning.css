@@ -1,0 +1,204 @@
+/* ==========================================================================
+ * User: Jihye Lee
+ * Date: 2013. 11. 25.
+ * Time: 오후 04:52
+ ========================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+body,
+a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url('sprite.png');
+    background-size: 222px 148px;
+}
+
+/* Aside */
+
+aside {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding-top: 13%;
+    width: 23%;
+    max-width: 300px;
+    min-width: 200px;
+    background-color: #d1d3d4;
+    z-index: 2;
+}
+
+aside #cover a .logo {
+    width: 140px;
+    height: 95px;
+    position: relative;
+    left: 25%;
+    background-position: 0 0;
+}
+aside #cover a .logo:hover {
+    opacity: .8;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+aside #extra {
+    position: relative;
+    left: 27%;
+    padding-top: 50px;
+}
+
+aside #extra button {
+    border: 0;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    margin-right: 3px;
+}
+
+aside #extra button.instagram {
+    background-position: 0 -97px;
+}
+
+aside #extra button.facebook {
+    background-position: -25px -97px;
+}
+
+aside #extra button.tumblr {
+    background-position: -50px -97px;
+}
+
+aside #extra button.mail {
+    background-position: -75px -97px;
+}
+
+aside #extra button.instagram:hover {
+    background-position: 0 -122px;
+}
+
+aside #extra button.facebook:hover {
+    background-position: -25px -122px;
+}
+
+aside #extra button.tumblr:hover {
+    background-position: -50px -122px;
+}
+
+aside #extra button.mail:hover {
+    background-position: -75px -122px;
+}
+
+aside #copyright {
+    font-size: 9px;
+    color: #939598;
+    position: relative;
+    left: 27%;
+    padding-top: 25px;
+}
+
+/* Article */
+
+article {
+    right: 23%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding: 11% 5%;
+    background-color: #f1f2f2;
+    min-width: 50px;
+
+}
+
+article .content-block {
+    width: 100%;
+    min-width: 150px;
+    float: left;
+    height: 1400px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.07);
+    color: #fff;
+    font-size: 11px;
+    font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+}
+
+article .content-block .web {
+    top: 0;
+    position: relative;
+    padding: 14px;
+    letter-spacing: 1px;
+    background-color: #2384c6;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+article .content-block .web .webd {
+    background-position: -101px -97px;
+    width: 19px;
+    height: 16px;
+    margin-top: -1px;
+    margin-right: -2px;
+}
+
+article .content-block .detail {
+    color: #d1d3d4;
+    position: relative;
+    padding: 50px 20px;
+}
+
+article .content-block .detail span {
+    padding-top: 10px;
+}
+
+article .content-block .detail h1 {
+    color: #a1a2a4;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+article .content-block .detail h1.korean {
+    font-family: "Apple SD Gothic Neo";
+    letter-spacing: -1px;
+    font-size: 16px;
+}
+
+article .content-block .detail img {
+    padding-top: 30px;
+}
+
+article .content-block .detail h2 {
+    padding-top: 30px;
+    font-family: "Apple SD Gothic Neo";
+
+}
