@@ -154,13 +154,16 @@ header nav span.extra a.twitter {
 
 #content #post {
     display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
 }
 
 #content #post li {
     float: left;
     display: block;
+    -webkit-flex: 1 1 160px;
     min-width: 160px;
     max-width: 320px;
+    position: relative;
     overflow: hidden;
     cursor: pointer;
 }
@@ -169,6 +172,13 @@ header nav span.extra a.twitter {
     width: 100%;
     height: auto;
     display: block;
+}
+
+#content #post li .detail {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 #content #post li .detail span {
